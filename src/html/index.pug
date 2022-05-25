@@ -1,0 +1,46 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./style.min.css")
+        link(rel="shortcut icon", href="./assets/images/content/Logo.svg", type="image/x-icon")
+        title Блог
+    body 
+        header.header 
+            .logo-container 
+                img(src="./assets/images/content/Logo.svg", alt="")
+            .navigation 
+                a(href="#").navigation-link Blog
+                a(href="#").navigation-link Login
+                a(href="#").navigation-signup Sign Up
+        main.main
+            .main--greeting.greeting-parent 
+                .greeting-parent__column
+                    .greeting-parent__header Project management tips & trends, delivered.
+                    .greeting-parent__container 
+                        .greeting-parent__subheader Join productivity hackers from around the world - the Mindbloss Blog Newsletter.
+                        form.greeting-parent__mail-signup 
+                            input(type="text", name = "mailsign", placeholder="Enter email").greeting-parent__input
+                            button(type="submit", value = "Subscribe").greeting-parent__button Subscribe
+                .greeting-parent__column
+                    .greeting-parent__last-article 
+                        .greeting-parent__image 
+                            img(src="./assets/images/content/greeting.png", alt="")
+                        .greeting-parent__info 
+                            .info-author
+                                .info-author__image
+                                    img(src="./assets/images/content/authoricon.svg", alt="")
+                                .info-author__name Sarah Harding
+                            .info-date 
+                                span 06 September
+                        .article-header 21 Job Interview Tips: How To Make a Great Impression
+                        .article-content Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis illum fuga eveniet. Deleniti asperiores, commodi quae ipsum quas est itaque, ipsa, dolore beatae voluptates nemo blanditiis iste eius officia minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis illum fuga eveniet.
+                        .greeting-parent__article-info 
+                            a(href="#").greeting-parent__more-link Keep reading
+                            .greeting-parent__tags 
+                                .greeting-parent__tag Recruitment
+                                .greeting-parent__tag Branding
+                                img(src="./assets/images/content/bookmark.svg", alt="").greeting-parent__save
+        footer.footer
