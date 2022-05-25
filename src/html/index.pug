@@ -28,19 +28,113 @@ html(lang="en")
                     .greeting-parent__last-article 
                         .greeting-parent__image 
                             img(src="./assets/images/content/greeting.png", alt="")
-                        .greeting-parent__info 
-                            .info-author
-                                .info-author__image
-                                    img(src="./assets/images/content/authoricon.svg", alt="")
-                                .info-author__name Sarah Harding
-                            .info-date 
-                                span 06 September
-                        .article-header 21 Job Interview Tips: How To Make a Great Impression
-                        .article-content Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis illum fuga eveniet. Deleniti asperiores, commodi quae ipsum quas est itaque, ipsa, dolore beatae voluptates nemo blanditiis iste eius officia minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis illum fuga eveniet.
-                        .greeting-parent__article-info 
-                            a(href="#").greeting-parent__more-link Keep reading
-                            .greeting-parent__tags 
-                                .greeting-parent__tag Recruitment
-                                .greeting-parent__tag Branding
-                                img(src="./assets/images/content/bookmark.svg", alt="").greeting-parent__save
+                        .greeting-parent__article-container
+                            .greeting-parent__info 
+                                .info-author
+                                    .info-author__image
+                                        img(src="./assets/images/content/authoricon.svg", alt="")
+                                    .info-author__name Sarah Harding
+                                .info-date 
+                                    span 06 September
+                            .article-header 21 Job Interview Tips: How To Make a Great Impression
+                            .article-content Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis illum fuga eveniet. Deleniti asperiores, commodi quae ipsum quas est itaque, ipsa, dolore beatae voluptates nemo blanditiis iste eius officia minus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis illum fuga eveniet.
+                            .greeting-parent__article-info 
+                                a(href="#").greeting-parent__more-link Keep reading
+                                .greeting-parent__tags 
+                                    .greeting-parent__tag Recruitment
+                                    .greeting-parent__tag Branding
+                                    img(src="./assets/images/content/bookmark.svg", alt="").greeting-parent__save
+            .main--blog.blog-parent 
+                .blog-parent__tags 
+                    .blog-parent__tag Programming
+                    .blog-parent__tag Job tips
+                    .blog-parent__tag Productivity
+                    .blog-parent__tag Marketing & Sales
+                    .blog-parent__tag Machine Learning
+                    .blog-parent__tag Investment
+                .blog-parent__container 
+                    .blog-parent__image 
+                        img(src="./assets/images/content/Blog_Logo.svg", alt="")
+                    .blog-parent__row
+                        .blog-parent__blog-tiles 
+                            .blog-parent__row
+                                .blog-parent__tile.blog-parent__tile--vertical 
+                                    .blog-parent__tile-image
+                                        img(src="./assets/images/content/blog1.png", alt="")
+                                    .blog-parent__tile-container 
+                                        .blog-parent__tile-category.blog-parent__tile-category--yellow news
+                                        .blog-parent__tile-header 10 Meeting Agenda Examples & Free Templates
+                                        .blog-parent__tile-info     
+                                            .blog-parent__info-author 
+                                                .info-author__image 
+                                                    img(src="./assets/images/content/authoricon.svg", alt="")
+                                                .info-author__name Sarah Harding
+                                            .blog-parent__info-tile 
+                                                .info-tile__logo 
+                                                    img(src="./assets/images/content/authoricon.svg", alt="")
+                                                .info-tile__time Max 7min read
+                                .blog-parent__tile.blog-parent__tile--horizontal
+                                    .blog-parent__tile-container 
+                                        .blog-parent__tile-category.blog-parent__tile-category--blue Productivity
+                                        .blog-parent__tile-header 10 Meeting Agenda Examples & Free Templates
+                                        .blog-parent__info-tile 
+                                            .info-tile__logo 
+                                                img(src="./assets/images/content/authoricon.svg", alt="")
+                                            .info-tile__time Max 7min read
+                                        .blog-parent__info-author 
+                                            .info-author__image 
+                                                img(src="./assets/images/content/authoricon.svg", alt="")
+                                            .info-author__name Sarah Harding
+                                    .blog-parent__tile-image
+                                        img(src="./assets/images/content/blog2.png", alt="")
+                            .blog-parent__row
+                                .blog-parent__tile.blog-parent__tile--horizontal
+                                    .blog-parent__tile-container 
+                                        .blog-parent__tile-category.blog-parent__tile-category--lightb Productivity
+                                        .blog-parent__tile-header 10 Meeting Agenda Examples & Free Templates
+                                        .blog-parent__info-tile 
+                                            .info-tile__logo 
+                                                img(src="./assets/images/content/authoricon.svg", alt="")
+                                            .info-tile__time Max 7min read
+                                        .blog-parent__info-author 
+                                            .info-author__image 
+                                                img(src="./assets/images/content/authoricon.svg", alt="")
+                                            .info-author__name Sarah Harding
+                                    .blog-parent__tile-image
+                                        img(src="./assets/images/content/blog2.png", alt="")
+                                .blog-parent__tile.blog-parent__tile--vertical 
+                                    .blog-parent__tile-image
+                                        img(src="./assets/images/content/blog1.png", alt="")
+                                    .blog-parent__tile-container 
+                                        .blog-parent__tile-category.blog-parent__tile-category--pink news
+                                        .blog-parent__tile-header 10 Meeting Agenda Examples & Free Templates
+                                        .blog-parent__tile-info     
+                                            .blog-parent__info-author 
+                                                .info-author__image 
+                                                    img(src="./assets/images/content/authoricon.svg", alt="")
+                                                .info-author__name Sarah Harding
+                                            .blog-parent__info-tile 
+                                                .info-tile__logo 
+                                                    img(src="./assets/images/content/authoricon.svg", alt="")
+                                                .info-tile__time Max 7min read
+                                
+                        .blog-parent__subscribe-form
+                            .blog-parent__subscribe-logo 
+                                img(src="./assets/images/content/Mail.svg", alt="")
+                            form.blog-parent__form
+                                .blog-parent__header Subscribe to our blog
+                                input#userNameBlog(type="text", name="userNameBlog", placeholder="Enter your email").blog-parent__input
+                                button(type="submit").blog-parent__button Subscribe 
+                    .blog-parent__pagination
+                        .blog-parent__button.blog-parent__button--prev.blog-parent__button--disabled 
+                        .blog-parent__pagination-links
+                            a(href="#").blog-parent__pagination-link 1
+                            a(href="#").blog-parent__pagination-link 2
+                            a(href="#").blog-parent__pagination-link 3
+                            a(href="#").blog-parent__pagination-link 4
+                            a(href="#").blog-parent__pagination-link 5
+                            a(href="#").blog-parent__pagination-link.blog-parent__pagination-link--active 6
+                            a(href="#").blog-parent__pagination-link 7
+                        .blog-parent__button.blog-parent__button--next.blog-parent__button--notdisabled
+        
         footer.footer
